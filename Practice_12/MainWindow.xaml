@@ -1,0 +1,242 @@
+﻿<Window x:Class="Practice_12.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practice_12"
+        mc:Ignorable="d"
+        Title="Sudoku by Matthew S." Height="450" Width="400" MinHeight="450" MinWidth="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!-- 1 -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBox x:Name="_0_0" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_0_1" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_0_2" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_1_0" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_1_1" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_1_2" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_2_0" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_2_1" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_2_2" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+        </Grid>
+
+        <!-- 2 -->
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBox x:Name="_0_3" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_0_4" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_0_5" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_1_3" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_1_4" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_1_5" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_2_3" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_2_4" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_2_5" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+        </Grid>
+
+        <!-- 3 -->
+        <Grid Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBox x:Name="_0_6" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_0_7" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_0_8" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_1_6" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_1_7" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_1_8" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_2_6" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_2_7" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_2_8" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+        </Grid>
+
+        <!-- 4 -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBox x:Name="_3_0" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_3_1" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_3_2" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_4_0" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_4_1" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_4_2" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_5_0" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_5_1" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_5_2" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+        </Grid>
+
+        <!-- 5 -->
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBox x:Name="_3_3" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_3_4" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_3_5" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_4_3" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_4_4" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_4_5" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_5_3" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_5_4" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_5_5" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+        </Grid>
+
+        <!-- 6 -->
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBox x:Name="_3_6" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_3_7" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_3_8" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_4_6" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_4_7" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_4_8" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_5_6" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_5_7" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_5_8" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+        </Grid>
+
+        <!-- 7 -->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBox x:Name="_6_0" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_6_1" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_6_2" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_7_0" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_7_1" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_7_2" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_8_0" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_8_1" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_8_2" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+        </Grid>
+
+        <!-- 8 -->
+        <Grid Grid.Row="2" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBox x:Name="_6_3" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_6_4" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_6_5" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_7_3" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_7_4" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_7_5" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_8_3" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_8_4" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_8_5" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+        </Grid>
+
+        <!-- 9 -->
+        <Grid Grid.Row="2" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBox x:Name="_6_6" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_6_7" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_6_8" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_7_6" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_7_7" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_7_8" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="1" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_8_6" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_8_7" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" Grid.Column="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <TextBox x:Name="_8_8" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="25" MaxLength="1" Grid.Row="2" Grid.Column="2" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+        </Grid>
+        
+        <Button x:Name="buttonConditionIsInputted" Content="Условие введено" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" MinHeight="30" Click="buttonConditionIsInputted_Click"/>
+        <Button x:Name="buttonReset" Content="Сброс" HorizontalAlignment="Center" Grid.Row="3" Grid.Column="2" VerticalAlignment="Center" MinHeight="30" Click="buttonReset_Click"/>
+        <Button x:Name="buttonSave" Grid.Column="1" Content="СОХРАНИТЬ" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" MinHeight="30" Click="buttonSave_Click"/>
+    </Grid>
+</Window>
